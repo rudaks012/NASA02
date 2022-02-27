@@ -10,17 +10,10 @@
 	</select>
 	
 	<select id="selectBuyerPayment" parameterType="String" resultType="co.Nasa.prj.admin.service.AdminAuthorVO">
-		<![CDATA[
-			SELECT *
-			FROM 
-			    (
-			    select rownum rn, b.*
-			    from v_buyerpayment b
-			    WHERE b_email=#{b_email} AND ROWNUM <=#{pageNum}*#{amount}
-			    )
-			WHERE rn>(#{pageNum}-1) * #{amount}
-		]]>
-		
+		SELECT *
+		FROM PAYMENT p JOIN SERVICE s
+		ON(p.s_email=s.s_email)
+		WHERE p.b_email=#{b_email}
 		
 	</select>
 	
