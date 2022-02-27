@@ -38,11 +38,11 @@ public class AdminMemberServiceImpl implements AdminMemberService{
 	}
 
 
-	@Override
-	public List<AdminAuthorVO> selectBuyerPayment(String id, Criteria cri) {
-		// TODO Auto-generated method stub
-		return map.selectBuyerPayment(id,cri);
-	}
+//	@Override
+//	public List<AdminAuthorVO> selectBuyerPayment(String id, Criteria cri) {
+//		// TODO Auto-generated method stub
+//		return map.selectBuyerPayment(id,cri);
+//	}
 
 
 	@Override
@@ -55,6 +55,12 @@ public class AdminMemberServiceImpl implements AdminMemberService{
 	public int getBuyerTotal() {
 		// TODO Auto-generated method stub
 		return map.getBuyerTotal();
+	}
+
+	@Override
+	public List<AdminAuthorVO> selectBuyerPayment(String id, Criteria cri) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

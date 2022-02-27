@@ -11,7 +11,7 @@ public interface AdminMemberMapper {
 		//구매자
 		//public List<BuyerVO> buyerList();
 		public AdminAuthorVO selectBuyer(String id); //구매자 정보
-		public List<AdminAuthorVO> selectBuyerPayment(String id, Criteria cri); //구매자 정보와 결제내역
+		//public List<AdminAuthorVO> selectBuyerPayment(String id, Criteria cri); //구매자 정보와 결제내역
 		public List<BuyerVO> getListWithPaging(Criteria cri); //구매자목록 페이징
 		public int getBuyerTotal();
 		//판매자
