@@ -29,7 +29,9 @@
 	</update>
 	
 	<select id="SellerSelect" resultType="co.Nasa.prj.comm.VO.SellerVO">
-		SELECT * 
+		SELECT TO_CHAR(S_DATE, 'YYYY-MM-DD') AS S_DATES, S_EMAIL, S_RANK, S_PASSWORD, S_NICKNAME, 
+		S_TEL, S_ADDRESS, S_ZIPCODE, S_DETAILADDRESS, S_AUTHOR, S_IMG, S_BUSINESS, S_REPORT, 
+		S_SCHOOL, S_MAJOR, S_GRAD, S_CARRER, S_ME
 		FROM SELLER
 		WHERE s_email = #{s_email}
 	</select>

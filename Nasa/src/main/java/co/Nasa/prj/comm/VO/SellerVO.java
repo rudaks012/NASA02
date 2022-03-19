@@ -24,6 +24,7 @@ public class SellerVO {
 	String s_carrer;
 	String s_me; // 자기소개
 	String s_name;
+	String s_dates; // 날짜 to_char
 
 	
 	String b_email; // 채팅용 vo
